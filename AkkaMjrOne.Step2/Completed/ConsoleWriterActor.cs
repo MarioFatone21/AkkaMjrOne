@@ -1,7 +1,7 @@
 ﻿using System;
 using Akka.Actor;
 
-namespace AkkaMjrOne.Step2
+namespace AkkaMjrOne.Step2.Completed
 {
     /// <summary>
     /// Actor responsible for serializing message writes to the console.

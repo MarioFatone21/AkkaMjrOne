@@ -1,6 +1,7 @@
-﻿using Akka.Actor;
+﻿using System;
+using Akka.Actor;
 
-namespace AkkaMjrOne.Step2
+namespace AkkaMjrOne.Step2.Completed
 {
     class Program
     {
@@ -18,7 +19,7 @@ namespace AkkaMjrOne.Step2
             var consoleReader = MyActorSystem.ActorOf(Props.Create(() => new ConsoleReaderActor(consoleWriter)));
 
             // tell console reader to begin
-            // TODO
+            consoleReader.Tell(ConsoleReaderActor.StartCommand);
 
             // blocks the main thread from exiting until the actor system is shut down
             MyActorSystem.WhenTerminated.Wait();

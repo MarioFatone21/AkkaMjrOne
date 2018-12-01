@@ -1,7 +1,7 @@
 ﻿using System;
 using Akka.Actor;
 
-namespace AkkaMjrOne.Step2
+namespace AkkaMjrOne.Step2.Completed
 {
     public class ConsoleReaderActor : UntypedActor
     {
@@ -25,7 +25,7 @@ namespace AkkaMjrOne.Step2
             else if (message is Messages.InputError)
             {
                 // send message to consoleWriterActor
-                // TODO
+                _consoleWriterActor.Tell(message as Messages.InputError);
             }
 
             GetAndValidateInput();
@@ -52,12 +52,12 @@ namespace AkkaMjrOne.Step2
             {
                 // signal that the user needs to supply an input, as previously 
                 // received input was blank
-                // TODO
+                Self.Tell(new Messages.NullInputError("No input received."));
             }
             else if (string.Equals(message, ExitCommand, StringComparison.OrdinalIgnoreCase))
             {
                 // shut down the entire actor system (allows the process to exit)
-                // TODO
+                Context.System.Terminate();
             }
             else
             {
@@ -65,15 +65,15 @@ namespace AkkaMjrOne.Step2
                 if (valid)
                 {
                     // send message to consoleWriterActor
-                    // TODO
+                    _consoleWriterActor.Tell(new Messages.InputSuccess("Thank you! Message was valid."));
 
                     // continue reading messages from console
-                    // TODO
+                    Self.Tell(new Messages.ContinueProcessing());
                 }
                 else
                 {
                     // send validation error
-                    // TODO
+                    Self.Tell(new Messages.ValidationError("Invalid: input had odd number of characters."));
                 }
             }
         }
