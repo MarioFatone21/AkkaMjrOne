@@ -14,8 +14,8 @@ namespace AkkaMjrOne.Step2
 
             // time to make your first actors! 
             // NOTE: use the variant that allows you to pass constructor params for ConsoleReaderActor
-            var consoleWriter = MyActorSystem.ActorOf<ConsoleWriterActor>();
-            var consoleReader = MyActorSystem.ActorOf(Props.Create(() => new ConsoleReaderActor(consoleWriter)));
+            var consoleWriter = MyActorSystem.ActorOf<ConsoleWriterActor>("consoleWriterActor");
+            var consoleReader = MyActorSystem.ActorOf(Props.Create(() => new ConsoleReaderActor(consoleWriter)), "consoleReaderActor");
 
             // tell console reader to begin
             // TODO

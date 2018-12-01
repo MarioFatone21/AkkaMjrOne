@@ -5,7 +5,7 @@ namespace AkkaMjrOne.Step2
 {
     public class ConsoleReaderActor : UntypedActor
     {
-        private IActorRef _consoleWriterActor;
+        private readonly IActorRef _consoleWriterActor;
 
         public const string StartCommand = "start";
         public const string ExitCommand = "exit";
@@ -58,6 +58,8 @@ namespace AkkaMjrOne.Step2
             {
                 // shut down the entire actor system (allows the process to exit)
                 // TODO
+
+                return;
             }
             else
             {

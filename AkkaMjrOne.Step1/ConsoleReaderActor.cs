@@ -6,7 +6,7 @@ namespace AkkaMjrOne.Step1
     // Make an actor of this class
     public class ConsoleReaderActor//TODO
     {
-        private IActorRef _consoleWriterActor;
+        private readonly IActorRef _consoleWriterActor;
 
         public const string ExitCommand = "exit";
         public const string ContinueCommand = "continue";

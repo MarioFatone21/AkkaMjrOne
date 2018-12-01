@@ -6,7 +6,7 @@ namespace AkkaMjrOne.Step1.Completed
     // Make an actor of this class
     public class ConsoleReaderActor : UntypedActor
     {
-        private IActorRef _consoleWriterActor;
+        private readonly IActorRef _consoleWriterActor;
 
         public const string ExitCommand = "exit";
         public const string ContinueCommand = "continue";

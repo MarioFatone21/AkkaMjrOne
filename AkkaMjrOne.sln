@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaMjrOne.Step2", "AkkaMjr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaMjrOne.Step1", "AkkaMjrOne.Step0\AkkaMjrOne.Step1.csproj", "{BA88E37B-2DEB-40AB-BD02-1BAAC0E71518}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaMjrOne.Step3", "AkkaMjrOne.Step3\AkkaMjrOne.Step3.csproj", "{703F66FB-DB16-43BA-B4DC-46C280707CDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{BA88E37B-2DEB-40AB-BD02-1BAAC0E71518}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA88E37B-2DEB-40AB-BD02-1BAAC0E71518}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA88E37B-2DEB-40AB-BD02-1BAAC0E71518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{703F66FB-DB16-43BA-B4DC-46C280707CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703F66FB-DB16-43BA-B4DC-46C280707CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703F66FB-DB16-43BA-B4DC-46C280707CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703F66FB-DB16-43BA-B4DC-46C280707CDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
