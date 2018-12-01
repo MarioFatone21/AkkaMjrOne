@@ -13,7 +13,7 @@ namespace AkkaMjrOne.Step1
             // initialize MyActorSystem
             // TODO
 
-            PrintInstructions();]\
+            PrintInstructions();
 
             // time to make your first actors! 
             // NOTE: use the variant that allows you to pass constructor params for ConsoleReaderActor
