@@ -1,7 +1,7 @@
 ﻿using System;
 using Akka.Actor;
 
-namespace AkkaMjrOne.Step1.Completed
+namespace AkkaMjrOne.Step2
 {
     // Make an actor of this class
     public class ConsoleReaderActor : UntypedActor
@@ -20,6 +20,7 @@ namespace AkkaMjrOne.Step1.Completed
         {
             Process(message);
         }
+
 
         private void Process(object message)
         {

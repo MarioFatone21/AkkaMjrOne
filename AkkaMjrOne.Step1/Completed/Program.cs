@@ -11,23 +11,19 @@ namespace AkkaMjrOne.Step1.Completed
         static void Main(string[] args)
         {
             // initialize MyActorSystem
-            // TODO
             MyActorSystem = ActorSystem.Create("MajorOne");
 
             PrintInstructions();
 
             // time to make your first actors! 
             // NOTE: use the variant that allows you to pass constructor params for ConsoleReaderActor
-            //TODO
             var consoleWriter = MyActorSystem.ActorOf<ConsoleWriterActor>();
             var consoleReader = MyActorSystem.ActorOf(Props.Create(() => new ConsoleReaderActor(consoleWriter)));
 
             // tell console reader to begin
-            // TODO
             consoleReader.Tell("start");
 
             // blocks the main thread from exiting until the actor system is shut down
-            // TODO
             MyActorSystem.WhenTerminated.Wait();
 
         }
