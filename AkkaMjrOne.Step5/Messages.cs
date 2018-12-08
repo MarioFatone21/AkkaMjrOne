@@ -1,4 +1,4 @@
-﻿namespace AkkaMjrOne.Step4.Completed
+﻿namespace AkkaMjrOne.Step5
 {
     public class Messages
     {
