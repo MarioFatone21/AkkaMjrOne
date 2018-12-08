@@ -1,6 +1,6 @@
-﻿namespace AkkaMjrOne.Step3
+﻿namespace AkkaMjrOne.Step3.Completed
 {
-    public class Messages.Completed
+    public class Messages
     {
 
         #region Neutral/system messages
