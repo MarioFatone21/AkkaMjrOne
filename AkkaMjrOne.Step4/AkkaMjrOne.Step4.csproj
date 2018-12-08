@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Akka" Version="1.3.10" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mono\" />
+    <Folder Include="Completed\" />
+  </ItemGroup>
+</Project>
