@@ -1,5 +1,6 @@
 ﻿namespace AkkaMjrOne.Step2
 {
+    //TODO: Make POCOS immutable
     public class Messages
     {
 
@@ -17,12 +18,7 @@
         /// </summary>
         public class InputSuccess
         {
-            public InputSuccess(string reason)
-            {
-                Reason = reason;
-            }
-
-            public string Reason { get; private set; }
+            public string Reason { get; set; }
         }
         #endregion
 
@@ -33,12 +29,7 @@
         /// </summary>
         public class InputError
         {
-            public InputError(string reason)
-            {
-                Reason = reason;
-            }
-
-            public string Reason { get; private set; }
+            public string Reason { get; set; }
         }
 
         /// <summary>
@@ -46,7 +37,7 @@
         /// </summary>
         public class NullInputError : InputError
         {
-            public NullInputError(string reason) : base(reason) { }
+            public NullInputError(string reason) { }
         }
 
         /// <summary>
@@ -54,7 +45,7 @@
         /// </summary>
         public class ValidationError : InputError
         {
-            public ValidationError(string reason) : base(reason) { }
+            public ValidationError(string reason) { }
         }
         #endregion
     }
