@@ -42,7 +42,7 @@ namespace AkkaMjrOne.Step6.Completed
             }
 
             // otherwise, just hand message off to validation actor (by telling its actor ref)
-            Context.ActorSelection("akk://MyActorSystem/user/validationActor");
+            Context.ActorSelection("akka://MyActorSystem/user/validationActor").Tell(message);
         }
 
         #endregion
