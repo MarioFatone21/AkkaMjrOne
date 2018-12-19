@@ -23,7 +23,7 @@
 //            var fileValidatorActorProps = Props.Create(() => new FileValidatorActor(consoleWriter));
 //            var fileValidator = MyActorSystem.ActorOf(fileValidatorActorProps, "validationActor");
 
-//            var consoleReaderProps = Props.Create<ConsoleReaderActor>(fileValidator);
+//            var consoleReaderProps = Props.Create<ConsoleReaderActor>();
 //            var consoleReader = MyActorSystem.ActorOf(consoleReaderProps, "consoleReaderActor");
 
 //            // begin processing

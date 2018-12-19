@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaMjrOne.Step2", "AkkaMjrOne.Step2\AkkaMjrOne.Step2.csproj", "{C3580131-383D-4426-9694-B54AE7A9FAEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaMjrOne.Step1", "AkkaMjrOne.Step0\AkkaMjrOne.Step1.csproj", "{BA88E37B-2DEB-40AB-BD02-1BAAC0E71518}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaMjrOne.Step1", "AkkaMjrOne.Step1\AkkaMjrOne.Step1.csproj", "{BA88E37B-2DEB-40AB-BD02-1BAAC0E71518}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaMjrOne.Step3", "AkkaMjrOne.Step3\AkkaMjrOne.Step3.csproj", "{703F66FB-DB16-43BA-B4DC-46C280707CDA}"
 EndProject
